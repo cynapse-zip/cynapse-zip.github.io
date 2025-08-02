@@ -69,3 +69,11 @@ compress_html:
 
 sass:
   style:               compressed
+
+
+# Use Hydejack as the remote theme
+remote_theme: hydecorp/hydejack@v9.2.1  # or the version/tag you want
+
+# Enable plugins that Hydejack relies on
+plugins:
+  - jekyll-include-cache
