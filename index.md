@@ -5,8 +5,13 @@ permalink: /
 show_content: true
 ---
 
+# Hi 🍋‍🟩
+
+{% include_relative README.md %}
+
+
 {%- capture readme -%}
-{%- include_relative README.md -%}
+{% include_relative README.md %}
 {%- endcapture -%}
 
 {{ readme | markdownify }}
