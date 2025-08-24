@@ -1,6 +1,11 @@
 ---
 layout: home
 title: Welcome to cynapse-zip
+permalink: /
 ---
 
-안녕하세요! 👋  
+{%- capture readme -%}
+{%- include_relative README.md -%}
+{%- endcapture -%}
+
+{{ readme | markdownify }}
